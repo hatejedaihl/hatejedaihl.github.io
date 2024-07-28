@@ -4,7 +4,10 @@ import viteLogo from '/vite.svg'
 import WebApp from '@twa-dev/sdk'
 
 import reactLogo from './assets/react.svg'
+
 import './App.css'
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
 
 function App() {
@@ -12,6 +15,7 @@ function App() {
 
   return (
     <>
+      <Navbar/>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -44,6 +48,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <Footer/>
     </>
   )
 }
